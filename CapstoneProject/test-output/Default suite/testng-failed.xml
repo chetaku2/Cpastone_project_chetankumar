@@ -3,18 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Stepdefinitions.booking">
+      <class name="TestRunner.TestRunner">
         <methods>
-          <include name="afterMethod"/>
-          <include name="user_books_flight"/>
-          <include name="do_login"/>
-          <include name="go_to_home"/>
-          <include name="select_as_source_and_as_destination"/>
-          <include name="beforeMethod"/>
-          <include name="open_application"/>
-          <include name="use_completes_booking"/>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
         </methods>
-      </class> <!-- Stepdefinitions.booking -->
+      </class> <!-- TestRunner.TestRunner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

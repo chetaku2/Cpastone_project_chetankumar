@@ -21,17 +21,6 @@ public class Hooks {
 		booking.driver.get("http://localhost:8081/FlyAway/");
 		
 	}
-	@Before
-	public void startReport() {
-		report = new ExtentReports(System.getProperty("user.dir")+"\\ExtentReport.html");
-		System.out.println(System.getProperty("user.dir")+"//ExtentReport1.html");
-		report.addSystemInfo("Host Name","CISCO");
-		report.addSystemInfo("Environment","TESTING");
-		report.addSystemInfo("User Name","CHETAN KUMAR(chetaku2@cisco.com)");
-
-		report.loadConfig(new File(System.getProperty("user.dir")+"\\extent-config.xml"));
-
-	}
 	
 	@After
 	public void afterallscenario() {
